@@ -1,0 +1,16 @@
+decide
+能够向前：前进
+不能向前:1.左边空距大于右边 向左
+              2.右边空距大于左边  向右
+               3.isnarrow 不管前面怎么判断，直接后退。
+update
+case1：action：forward 执行前进 结束switch语句 update结束 进入while语句
+case2：Action::Left         执行左转 结束switch语句  update结束 进入while语句
+case3:   Action::Right      执行右转 结束switch语句 update结束 进入while语句
+case4：Action：Backward 执行后退 结束switch语句 update结束  进入while语句
+
+传入初始距离 (10, 10, 10)
+while
+ while（true） 一直循环执行以下两步
+    getData（decide部分）
+    update （update部分）
